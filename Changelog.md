@@ -1,5 +1,13 @@
 AppleALC Changelog
 ==================
+#### v1.2.8
+Starting with 1.2.8 AppleALC uses a different scheme to handle `layout-id`. This is done to avoid AppleHDA.kext file dependencies (i.e. we cannot use missing layoutXX.xml.zlib files) and improve codec compatibility (i.e. some layouts change DSP behaviour).  
+From now on AppleALC will operate on 2 identifiers:
+- `alc-layout-id` used to identify the layout within AppleALC itself (can be any number)
+- `apple-layout-id` reported to AppleHDA to avoid the issue above
+You may replace `layout-id` with `alc-layout-id` after an upgrade, but for compatibility reasons existing `layout-id` values will be automatically converted to `alc-layout-id`. Overrides with `alcid=X` boot argument are also supported.  
+To override `apple-layout-id` you may use `alcaaplid=X` boot argument. The default value to be reported to AppleHDA is 7.
+
 #### v1.2.7
 - Change Platforms, NodeId SPDIF 17 in NodeId 30, for layout72 and layout76.
 - Added ALC892 layout-id 71 - 5+1,  no SPDIF, with 4 simple Function DSP
