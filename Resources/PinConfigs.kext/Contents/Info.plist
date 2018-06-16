@@ -5566,60 +5566,108 @@
 					<true/>
 				</dict>
 				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>0x10ec0892</string>
 					<key>CodecID</key>
 					<integer>283904146</integer>
 					<key>Comment</key>
 					<string>ALC892, no SPDIF, 6Ch, Function DSP -original layout70</string>
 					<key>ConfigData</key>
 					<data>
-					AUcMAgFHHhEBhx6gAYcfkQGXHoEBtwwC
+					AUceEQGHHqABhx+RAZcegQG3DAI=
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
 					<integer>75</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
 				</dict>
 				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>0x10ec0892</string>
 					<key>CodecID</key>
 					<integer>283904146</integer>
 					<key>Comment</key>
 					<string>ALC892, SPDIF, 6Ch, Function DSP - original layout70</string>
 					<key>ConfigData</key>
 					<data>
-					AUcMAgFHHhEBhx6gAYcfkQGXHoEBtwwC
+					AUceEQGHHqABhx+RAZcegQG3DAI=
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
 					<integer>76</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
 				</dict>
 				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>0x10ec0892</string>
 					<key>CodecID</key>
 					<integer>283904146</integer>
 					<key>Comment</key>
 					<string>ALC892,6Ch, no SPDIF, 4 simple Function DSP</string>
 					<key>ConfigData</key>
 					<data>
-					AUcMAgFHHhEBhx6gAYcfkQGXHoEBtwwC
+					AUceEQGHHqABhx+RAZcegQG3DAI=
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
 					<integer>71</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
 				</dict>
 				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>0x10ec0892</string>
 					<key>CodecID</key>
 					<integer>283904146</integer>
 					<key>Comment</key>
 					<string>ALC892, 6Ch, SPDIF, 4 simple Function DSP</string>
 					<key>ConfigData</key>
 					<data>
-					AUcMAgFHHhEBhx6gAYcfkQGXHoEBtwwC
+					AUceEQGHHqABhx+RAZcegQG3DAI=
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
 					<integer>72</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
 				</dict>
 				<dict>
 					<key>Codec</key>
