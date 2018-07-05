@@ -1,5 +1,9 @@
 AppleALC Changelog
 ==================
+#### v1.3.0
+- Added digital audio property injection for AMD, Intel, NVIDIA
+- Requires Lilu 1.2.8 and higher
+
 #### v1.2.8
 Starting with 1.2.8 AppleALC uses a different scheme to handle `layout-id`. This is done to avoid AppleHDA.kext file dependencies (i.e. we cannot use missing layoutXX.xml.zlib files) and improve codec compatibility (i.e. some layouts change DSP behaviour).  
 From now on AppleALC will operate on 2 identifiers:
