@@ -3,6 +3,7 @@ AppleALC Changelog
 #### v1.3.0
 - Requires Lilu 1.2.5 and higher and enabled on 10.14 by default
 - Added digital audio property injection for AMD, Intel, NVIDIA
+- Added NVIDIA multi-gpu NVIDIA HDAU patch support
 
 #### v1.2.8
 Starting with 1.2.8 AppleALC uses a different scheme to handle `layout-id`. This is done to avoid AppleHDA.kext file dependencies (i.e. we cannot use missing layoutXX.xml.zlib files) and improve codec compatibility (i.e. some layouts change DSP behaviour).  
