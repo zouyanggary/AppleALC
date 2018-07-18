@@ -4764,6 +4764,16 @@
 					<key>LayoutID</key>
 					<integer>12</integer>
 				</dict>
+				<dict>
+					<key>CodecID</key>
+					<integer>283903592</integer>
+					<key>ConfigData</key>
+					<data>AUceEQGHHqABhx+RAZcegQFHDAI=</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>83</integer>
+				</dict>
 			</array>
 			<key>IOClass</key>
 			<string>AppleHDAHardwareConfigDriver</string>

@@ -13,6 +13,12 @@
 		<key>Layouts</key>
 		<array>
 			<dict>
+				<key>Id</key>
+				<integer>83</integer>
+				<key>Path</key>
+				<string>layout83.xml.zlib</string>
+			</dict>
+			<dict>
 				<key>Comment </key>
 				<string>Mirone Laptop Patch</string>
 				<key>Id</key>
@@ -55,6 +61,12 @@
 		</array>
 		<key>Platforms</key>
 		<array>
+			<dict>
+				<key>Id</key>
+				<integer>83</integer>
+				<key>Path</key>
+				<string>Platforms.xml.zlib</string>
+			</dict>
 			<dict>
 				<key>Comment </key>
 				<string>Mirone Laptop Patch</string>
