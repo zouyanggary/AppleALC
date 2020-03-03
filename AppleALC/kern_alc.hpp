@@ -76,7 +76,9 @@ private:
 	/**
 	 *  Hooked IOHDACodecDevice executeVerb
 	 */
+#ifdef DEBUG
 	static IOReturn IOHDACodecDevice_executeVerb(void *that, uint16_t a1, uint16_t a2, uint16_t a3, unsigned int *a4, bool a5);
+#endif
 		
 	/**
 	 *  Trampolines for original method invocations
@@ -85,7 +87,9 @@ private:
 	mach_vm_address_t orgPlatformLoadCallback {0};
 	mach_vm_address_t orgGfxProbe {0};
 	mach_vm_address_t orgAppleHDAController_start {0};
+#ifdef DEBUG
 	mach_vm_address_t orgIOHDACodecDevice_executeVerb {0};
+#endif
 
 	/**
 	 *  @enum IOAudioDevicePowerState

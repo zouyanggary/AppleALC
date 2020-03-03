@@ -302,6 +302,7 @@ bool AlcEnabler::AppleHDAController_start(IOService* service, IOService* provide
 	return FunctionCast(AppleHDAController_start, callbackAlc->orgAppleHDAController_start)(service, provider);
 }
 
+#ifdef DEBUG
 IOReturn AlcEnabler::IOHDACodecDevice_executeVerb(void *that, uint16_t a1, uint16_t a2, uint16_t a3, unsigned int *a4, bool a5)
 {
 	IOReturn result = FunctionCast(IOHDACodecDevice_executeVerb, callbackAlc->orgIOHDACodecDevice_executeVerb)(that, a1, a2, a3, a4, a5);
@@ -309,6 +310,7 @@ IOReturn AlcEnabler::IOHDACodecDevice_executeVerb(void *that, uint16_t a1, uint1
 		DBGLOG("alc", "IOHDACodecDevice::executeVerb with parameters a1 = %u, a2 = %u, a3 = %u failed with result = %x", a1, a2, a3, result);
 	return result;
 }
+#endif
 
 uint32_t AlcEnabler::getAudioLayout(IOService *hdaDriver) {
 	auto parent = hdaDriver->getParentEntry(gIOServicePlane);
@@ -606,11 +608,13 @@ void AlcEnabler::processKext(KernelPatcher &patcher, size_t index, mach_vm_addre
 			eraseRedundantLogs(patcher, kextIndex);
 	}
 	
+#ifdef DEBUG
 	if (ADDPR(debugEnabled) && !(progressState & ProcessingState::PatchHDAFamily) && kextIndex == KextIdIOHDAFamily) {
 		progressState |= ProcessingState::PatchHDAFamily;
 		KernelPatcher::RouteRequest request("__ZN16IOHDACodecDevice11executeVerbEtttPjb", IOHDACodecDevice_executeVerb, orgIOHDACodecDevice_executeVerb);
 		patcher.routeMultiple(index, &request, 1, address, size);
 	}
+#endif
 	
 	if (!(progressState & ProcessingState::PatchHDAController) && kextIndex == KextIdAppleHDAController) {
 		progressState |= ProcessingState::PatchHDAController;
