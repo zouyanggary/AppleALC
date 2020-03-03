@@ -608,20 +608,14 @@ void AlcEnabler::processKext(KernelPatcher &patcher, size_t index, mach_vm_addre
 	
 	if (ADDPR(debugEnabled) && !(progressState & ProcessingState::PatchHDAFamily) && kextIndex == KextIdIOHDAFamily) {
 		progressState |= ProcessingState::PatchHDAFamily;
-		KernelPatcher::RouteRequest requests[] {
-			KernelPatcher::RouteRequest("__ZN16IOHDACodecDevice11executeVerbEtttPjb", IOHDACodecDevice_executeVerb, orgIOHDACodecDevice_executeVerb),
-		};
-
-		patcher.routeMultiple(index, requests, address, size);
+		KernelPatcher::RouteRequest request("__ZN16IOHDACodecDevice11executeVerbEtttPjb", IOHDACodecDevice_executeVerb, orgIOHDACodecDevice_executeVerb);
+		patcher.routeMultiple(index, &request, 1, address, size);
 	}
 	
 	if (!(progressState & ProcessingState::PatchHDAController) && kextIndex == KextIdAppleHDAController) {
 		progressState |= ProcessingState::PatchHDAController;
-		KernelPatcher::RouteRequest requests[] {
-			KernelPatcher::RouteRequest("__ZN18AppleHDAController5startEP9IOService", AppleHDAController_start, orgAppleHDAController_start),
-		};
-
-		patcher.routeMultiple(index, requests, address, size);
+		KernelPatcher::RouteRequest request("__ZN18AppleHDAController5startEP9IOService", AppleHDAController_start, orgAppleHDAController_start);
+		patcher.routeMultiple(index, &request, 1, address, size);
 	}
 	
 	// Ignore all the errors for other processors
