@@ -698,12 +698,12 @@
 		<string>Intel</string>
 	</dict>
 	<dict>
-		<key>ComputerModel</key>
-		<integer>1</integer>
 		<key>Device</key>
-		<integer>41800</integer>
+		<real>41800</real>
+		<key>Model</key>
+		<string>Laptop</string>
 		<key>Name</key>
-		<string>Mobile 300 Series PCH HD Audio, Revision 16 (0x10), fully works after sleep/wake trick</string>
+		<string>Mobile Controller Cannon Lake PCH cAVS, Revision 16 (0x10), fully works after sleep/wake trick</string>
 		<key>Patches</key>
 		<array>
 			<dict>
@@ -711,8 +711,6 @@
 				<integer>6</integer>
 				<key>Find</key>
 				<data>cJ0AAA==</data>
-				<key>MaxKernel</key>
-				<integer>20</integer>
 				<key>MinKernel</key>
 				<integer>18</integer>
 				<key>Name</key>
@@ -725,8 +723,6 @@
 				<integer>1</integer>
 				<key>Find</key>
 				<data>hoBwnQ==</data>
-				<key>MaxKernel</key>
-				<integer>20</integer>
 				<key>MinKernel</key>
 				<integer>18</integer>
 				<key>Name</key>
