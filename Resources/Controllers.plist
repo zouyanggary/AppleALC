@@ -698,6 +698,53 @@
 		<string>Intel</string>
 	</dict>
 	<dict>
+		<key>ComputerModel</key>
+		<integer>1</integer>
+		<key>Device</key>
+		<integer>41800</integer>
+		<key>Name</key>
+		<string>Mobile 300 Series PCH HD Audio, Revision 16 (0x10), fully works after sleep/wake trick</string>
+		<key>Patches</key>
+		<array>
+			<dict>
+				<key>Count</key>
+				<integer>6</integer>
+				<key>Find</key>
+				<data>cJ0AAA==</data>
+				<key>MaxKernel</key>
+				<integer>20</integer>
+				<key>MinKernel</key>
+				<integer>18</integer>
+				<key>Name</key>
+				<string>AppleHDAController</string>
+				<key>Replace</key>
+				<data>SKMAAA==</data>
+			</dict>
+			<dict>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Find</key>
+				<data>hoBwnQ==</data>
+				<key>MaxKernel</key>
+				<integer>20</integer>
+				<key>MinKernel</key>
+				<integer>18</integer>
+				<key>Name</key>
+				<string>AppleHDAController</string>
+				<key>Replace</key>
+				<data>hoBIow==</data>
+			</dict>
+		</array>
+		<key>RevisionNum</key>
+		<integer>1</integer>
+		<key>Revisions</key>
+		<array>
+			<integer>16</integer>
+		</array>
+		<key>Vendor</key>
+		<string>Intel</string>
+	</dict>
+	<dict>
 		<key>Device</key>
 		<integer>41800</integer>
 		<key>Name</key>

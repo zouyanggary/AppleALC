@@ -3,6 +3,7 @@ AppleALC Changelog
 #### v1.4.8
 - MaxKernel HS for GM/GP
 - Support startup delay for AppleHDAController via `alc-delay` property or `alcdelay` boot-arg (in ms)
+- Add patches for Mobile ALC295 (8086:a348) revision 0x10 (300 Series PCH HD Audio) to get HDMI Audio working (works after sleep/wake trick)
 
 #### v1.4.7
 - Added support for Intel C620 series PCH Audio
