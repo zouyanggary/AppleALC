@@ -30,6 +30,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>ALC3241 - HP Envy 15t-k200 Beats Audio 2.1</string>
+				<key>Id</key>
+				<integer>10</integer>
+				<key>Path</key>
+				<string>layout10.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>MacPeet - ALC290 for HP m6 n015dx</string>
+				<key>Id</key>
+				<integer>15</integer>
+				<key>Path</key>
+				<string>layout15.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>vusun123 - ALC 290 for Dell Vostro 5480</string>
 				<key>Id</key>
 				<integer>28</integer>
@@ -54,6 +70,22 @@
 				<integer>4</integer>
 				<key>Path</key>
 				<string>Platforms4.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ALC3241 - HP Envy 15t-k200 Beats Audio 2.1</string>
+				<key>Id</key>
+				<integer>10</integer>
+				<key>Path</key>
+				<string>Platforms10.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>MacPeet - ALC290 for HP m6 n015dx</string>
+				<key>Id</key>
+				<integer>15</integer>
+				<key>Path</key>
+				<string>Platforms15.xml.zlib</string>
 			</dict>
 			<dict>
 				<key>Comment</key>

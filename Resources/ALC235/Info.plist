@@ -100,6 +100,22 @@
 				<key>Path</key>
 				<string>layout28.xml.zlib</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Realtek ALC235(Display as ALC233) for Lenovo Qitian M420-D046(C) by Cryse Hillmes</string>
+				<key>Id</key>
+				<integer>35</integer>
+				<key>Path</key>
+				<string>layout35.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ALC235 for Lenovo TianYi 510s Mini by DalianSky</string>
+				<key>Id</key>
+				<integer>99</integer>
+				<key>Path</key>
+				<string>layout99.xml.zlib</string>
+			</dict>
 		</array>
 		<key>Platforms</key>
 		<array>
@@ -190,6 +206,22 @@
 				<integer>28</integer>
 				<key>Path</key>
 				<string>Platforms28.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Realtek ALC235(Display as ALC233) for Lenovo Qitian M420-D046(C) by Cryse Hillmes</string>
+				<key>Id</key>
+				<integer>35</integer>
+				<key>Path</key>
+				<string>Platforms35.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ALC235 for Lenovo TianYi 510s Mini by DalianSky</string>
+				<key>Id</key>
+				<integer>99</integer>
+				<key>Path</key>
+				<string>Platforms99.xml.zlib</string>
 			</dict>
 		</array>
 	</dict>
